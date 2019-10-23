@@ -18,3 +18,20 @@ function getVolume(...dimensions){
 }
 
 console.log(getVolume(5, 10, 3, 50));
+
+//***OBJECTS***
+const myFamily = {
+  lastName: 'Doe',
+  mom: 'Cynthia',
+  dad: 'Paul',
+};
+
+myFamily.sister = 'Lucinda';
+myFamily['brother'] = 'Merle';
+myFamily['uncle'] = 'Allan';
+myFamily.sayHi = function() {
+  console.log(`Hello from the ${myFamily.lastName}s`);
+}
+myFamily.sayHi() // => Hello from the Does
+
+console.log(myFamily);
